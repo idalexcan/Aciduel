@@ -115,38 +115,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 10.823001, y: -57.646004, z: -16.44}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: -0.22500001, y: -41.177002, z: -0.257}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
         value: {x: -53.579002, y: -2.5530002, z: -24.469002}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -243,7 +211,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.455, y: 6.9200006, z: 9.994}
+        value: {x: 0, y: -90.00001, z: -6.8240004}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -253,7 +221,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -308,20 +276,6 @@ AnimationClip:
       customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 243592569
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 3595270589
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-    - serializedVersion: 2
       path: 2402123653
       attribute: 4
       script: {fileID: 0}
@@ -364,7 +318,7 @@ AnimationClip:
       customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3325426568
+      path: 243592569
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -739,120 +693,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 10.823001
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -57.646004
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -16.44
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -0.22500001
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -41.177002
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -0.257
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
         value: -53.579002
         inSlope: 0
         outSlope: 0
@@ -1195,7 +1035,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.455
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1206,7 +1046,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1214,7 +1054,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 6.9200006
+        value: -90.00001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1225,7 +1065,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1233,7 +1073,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 9.994
+        value: -6.8240004
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1244,7 +1084,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -1255,7 +1095,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Rileg0/RIknees0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1265,7 +1105,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Rileg0/RIknees0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1275,7 +1115,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0/Rihand0
+    path: Pseudojoints_ver01/Rileg0/RIknees0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1315,7 +1155,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
+    path: Pseudojoints_ver01/Hip0/Chest0/Head0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1325,7 +1165,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
+    path: Pseudojoints_ver01/Hip0/Chest0/Head0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1335,7 +1175,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
+    path: Pseudojoints_ver01/Hip0/Chest0/Head0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1615,7 +1455,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Pseudojoints_ver01/Rileg0/RIknees0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1625,7 +1465,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Pseudojoints_ver01/Rileg0/RIknees0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1635,67 +1475,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Pseudojoints_ver01/Rileg0/RIknees0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0/Riebowl0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Pseudojoints_ver01/Hip0/Chest0/Head0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Pseudojoints_ver01/Hip0/Chest0/Head0
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Pseudojoints_ver01/Hip0/Chest0/Head0
+    path: Pseudojoints_ver01/Hip0/Chest0/Riarm0
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

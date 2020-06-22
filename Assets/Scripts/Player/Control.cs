@@ -6,16 +6,17 @@ public class Control : MonoBehaviour
 {
     // About shot ......................................................
     int cantbullets;
-    public GameObject bulletsContainer, shotpoint;
-    public static Queue<GameObject> bullets = new Queue<GameObject>();
+    public GameObject bulletsContainer, shotpoint, shotarget;
+    public Queue<GameObject> bullets = new Queue<GameObject>();
 
     // About moving ......................................
     public bool play;
     int jumps;
-    public bool onAir;
+    public bool onAir;//, collided, unestableColl;
     public float speed;
     public float x,y,xr=0,yr=0,  upRotation;
     public Vector3 velocity;
+    public int life=20;
     public GameObject underpoint;
     
     // About audio-visual ..............................
@@ -32,25 +33,32 @@ public class Control : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        play=true;
+
         animator=GetComponent<Animator>();
 
         cantbullets=bulletsContainer.transform.childCount;
         for (int i = 0; i < cantbullets; i++)
         {
             bullets.Enqueue(bulletsContainer.transform.GetChild(i).gameObject);
-            bulletsContainer.transform.GetChild(i).gameObject.AddComponent<Bullet>();
+            bulletsContainer.transform.GetChild(i).gameObject.AddComponent<AcidBall>();
             bulletsContainer.transform.GetChild(i).gameObject.SetActive(false);
         }
 
+       
         DontDestroyOnLoad(bulletsContainer);
     }
+
     void Update()
     {
         if (play)
         {
+
             // variables.................................
             velocity=GetComponent<Rigidbody>().velocity;
+            if (transform.position.y<-12)
+            {
+                life=0;
+            }
 
             // comportamiento..
             MoveAndLook();
@@ -61,6 +69,7 @@ public class Control : MonoBehaviour
             animator.SetBool("jump",Input.GetKeyDown(KeyCode.Space));
             animator.SetFloat("upMove", velocity.y);
             animator.SetBool("onAir",onAir);
+            
         }
     }
     private void OnCollisionEnter(Collision other)
@@ -71,11 +80,12 @@ public class Control : MonoBehaviour
             onAir=false;
             jumps=0;
         }
-        
     }
+    
 
 
-    ///--------------------------------------------------------------<FUNCIONES_DE_MOVIMIENTO>
+    //   FUNCIONES DE CLASE __________________________________________________________________________________
+    
     void Jump()
     {
 
@@ -97,7 +107,7 @@ public class Control : MonoBehaviour
         xr=Input.GetAxis("Mouse X");
         yr=Input.GetAxis("Mouse Y");
 
-        if (upRotation<=0.3 && upRotation>=-0.3)
+        if (upRotation<=0.3 && upRotation>=-0.3)// && unestableColl==false)
         {
             upRotation+=yr*0.01f;
         }else if (upRotation>0.3)
@@ -109,10 +119,15 @@ public class Control : MonoBehaviour
         }
 
         
+        // if (unestableColl==false)
+        // {
+            
+        // }
+
         Rigidbody vel=GetComponent<Rigidbody>();
-        float velUp=vel.velocity.y;
-        Vector3 desiredVelocity = (x * transform.right + y * transform.forward * 2);
-        vel.velocity=desiredVelocity*speed + transform.up*velUp;
+            float velUp=vel.velocity.y;
+            Vector3 desiredVelocity = (x * transform.right + y * transform.forward * 2);
+            vel.velocity=desiredVelocity*speed + transform.up*velUp;
         
 
         transform.Rotate(0,xr*2.6f,0);
@@ -133,10 +148,8 @@ public class Control : MonoBehaviour
         
     }
 
-    ///--------------------------------------------------------------<FUNCIONES_DE_DISPARO>
     void Shot()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
             GameObject go=bullets.Dequeue();
@@ -144,8 +157,8 @@ public class Control : MonoBehaviour
             go.transform.position=shotpoint.transform.position;
             go.GetComponent<Rigidbody>().AddForce(shotpoint.transform.forward*700);
             go.GetComponent<Rigidbody>().useGravity= true;
-            go.GetComponent<Bullet>().droped= true;
-            go.GetComponent<Bullet>().myQueue=bullets;
+            go.GetComponent<AcidBall>().droped= true;
+            go.GetComponent<AcidBall>().myQueue=bullets;
             AudioSource.PlayClipAtPoint(shotClip, transform.position);
         }
     }
@@ -160,4 +173,31 @@ public class Control : MonoBehaviour
     
 
 }
+//___________________________________________________________________________________________________________
 
+public class Bullet : MonoBehaviour // ---- C L A S E    B U L L E T -----------------------------------------
+{   
+    int timelife=0;
+    public bool droped, onCorrosion;
+    public Queue<GameObject> myQueue = new Queue<GameObject>();
+    public Control control;
+    void Update()
+    {
+        if (droped)
+        {
+            timelife++;
+            if (timelife==70 || onCorrosion)
+            {
+                Control.Introducing(gameObject, myQueue);
+                
+                timelife=0;
+                droped=false;
+                onCorrosion=false;
+
+            }
+        }
+    }
+
+
+    
+}

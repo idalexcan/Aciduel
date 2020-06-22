@@ -14,7 +14,7 @@ public class Proyectile : MonoBehaviour
             timelife++;
             if (timelife==55 || onCorrosion)
             {
-                Control.Introducing(gameObject, myQueue);
+                // Control.Introducing(gameObject, myQueue);
                 
                 timelife=0;
                 droped=false;

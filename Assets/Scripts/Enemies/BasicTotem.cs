@@ -44,8 +44,8 @@ public class BasicTotem : MonoBehaviour
             go.transform.position=shotpoint.transform.position;
             go.GetComponent<Rigidbody>().AddForce(shotpoint.transform.forward*1500);
             go.GetComponent<Rigidbody>().useGravity= true;
-            go.GetComponent<Bullet>().droped= true;
-            go.GetComponent<Bullet>().myQueue=parent.GetComponent<Totems>().bullets;
+            go.GetComponent<AcidBall>().droped= true;
+            go.GetComponent<AcidBall>().myQueue=parent.GetComponent<Totems>().bullets;
             AudioSource.PlayClipAtPoint(shot,transform.position);
 
             timer=0;

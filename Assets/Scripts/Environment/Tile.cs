@@ -28,7 +28,7 @@ public class Tile : MonoBehaviour
 
     public void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.GetComponent<Bullet>() && vulnerable)
+        if(other.gameObject.GetComponent<AcidBall>() && vulnerable)
         {
             
             colision_bala=true;
@@ -38,7 +38,7 @@ public class Tile : MonoBehaviour
                 disolveAnimation.enabled=true;
             }
             
-            other.gameObject.GetComponent<Bullet>().onCorrosion=true;
+            other.gameObject.GetComponent<AcidBall>().onCorrosion=true;
             Destroy(transform.parent.gameObject,1.5f);
             //Destroy(gameObject, 1.5f);
         }

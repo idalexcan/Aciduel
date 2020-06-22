@@ -115,10 +115,17 @@ public class IntroductionMng : MonoBehaviour
         index=-1;
         foreach (var item in talkers)
         {
+            item.transform.GetChild(0).transform.LookAt(player.transform.position);
+                
+                Vector3 aux=item.transform.GetChild(1).transform.eulerAngles;
+                aux.y=item.transform.GetChild(0).transform.eulerAngles.y;
+                item.transform.GetChild(1).transform.eulerAngles=aux;
+                
             index++;
             if ((item.transform.position-player.transform.position).magnitude<3.5f)
             {
-                item.transform.GetChild(0).transform.LookAt(player.transform.position);
+                
+                
                 talkerIndex=index;
                 playSpeak=true;
                 closeTalkers++;

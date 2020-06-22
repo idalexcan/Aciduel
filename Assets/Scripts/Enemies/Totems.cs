@@ -16,7 +16,7 @@ public class Totems : MonoBehaviour
         for (int i = 0; i < bulletsContainer.transform.childCount; i++)
         {
             bullets.Enqueue(bulletsContainer.transform.GetChild(i).gameObject);
-            bulletsContainer.transform.GetChild(i).gameObject.AddComponent<Bullet>();
+            bulletsContainer.transform.GetChild(i).gameObject.AddComponent<AcidBall>();
             bulletsContainer.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
